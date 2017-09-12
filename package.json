@@ -7,13 +7,13 @@
     "hangman": "./cli/index.js"
   },
   "scripts": {
-    "start": "node ./server/app.js",
+    "start": "cross-env NODE_PATH=./ node ./server/app.js",
     "pretest": "npm run lint",
     "test": "npm run unit-test",
     "posttest": "npm run coverage",
     "lint": "eslint .",
-    "unit-test": "cross-env NODE_ENV=test mocha tests/lib/ tests/server/ -c",
-    "coverage": "cross-env NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha -- tests/lib/ tests/server/ -R spec"
+    "unit-test": "cross-env NODE_PATH=./ NODE_ENV=test mocha tests/lib/ tests/server/ -c",
+    "coverage": "cross-env NODE_PATH=./ NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha -- tests/lib/ tests/server/ -R spec"
   },
   "license": "UNLICENSED",
   "author": "Joaquin Briceno <joaquinbriceno1@gmail.com>",
@@ -30,8 +30,8 @@
     "debug": "^3.0.1",
     "express": "^4.14.0",
     "meow": "^3.7.0",
-    "node-uuid": "^1.4.7",
-    "pug": "^2.0.0-beta3"
+    "pug": "^2.0.0-beta3",
+    "uuid": "^3.1.0"
   },
   "devDependencies": {
     "async": "^2.0.0-rc.6",

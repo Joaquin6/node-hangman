@@ -5,7 +5,7 @@ const game = require('./game');
 
 module.exports = {
   route: function(app) {
-    app.get('/', home);
+    app.use('/', home);
     app.use('/game', game);
 
     app.use((err, req, res, next) => {

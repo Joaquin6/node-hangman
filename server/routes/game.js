@@ -1,10 +1,10 @@
 'use strict';
 
 const express = require('express');
-const Hangman = require('../../lib');
-const GameList = require('../lib/game-list.js');
-const options = require('../../lib/config.js');
-const uuid = require('node-uuid');
+const Hangman = require('lib');
+const options = require('lib/config');
+const GameList = require('server/lib/game-list');
+const uuid = require('uuid');
 
 const router = express.Router();
 const games = new GameList();
