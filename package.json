@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_PATH=./ node ./server/app.js",
+    "dev": "cross-env DEBUG=hangman:* npm start",
     "pretest": "npm run lint",
     "test": "npm run unit-test",
     "posttest": "npm run coverage",

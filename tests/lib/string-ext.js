@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../lib/ext.js');
+require('lib/ext.js');
 const expect = require('chai').expect;
 
 describe('String extension', () => {

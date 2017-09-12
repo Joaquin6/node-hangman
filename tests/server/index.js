@@ -1,6 +1,6 @@
 'use strict';
 
-const app = require('../../server/app.js');
+const app = require('server/app');
 const request = require('supertest');
 const expect = require('chai').expect;
 const async = require('async');

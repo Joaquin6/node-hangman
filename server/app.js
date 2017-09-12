@@ -34,6 +34,7 @@ function listen() {
 		log('\t--------- OS Configurations ---------');
 		log('\tOS Type is %s and Platform is %s', os.type(), os.platform());
 		log('\tOS Memory %s and Available Memory is %s', colors.green(os.totalmem()), colors.green(os.freemem()));
+		process.stdout.write(`The server is running, visit http://localhost:9090.${os.EOL}`);
 	});
 }
 

@@ -1,8 +1,8 @@
 'use strict';
 
-const Hangman = require('../../lib');
+const Hangman = require('lib');
 const expect = require('chai').expect;
-const defaultOptions = require('../../lib/default.json');
+const defaultOptions = require('lib/default.json');
 
 const options = {
   availableWords: [ 'Space', 'Juno', 'Jupter' ],
