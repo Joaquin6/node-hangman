@@ -1,5 +1,7 @@
-var home = require('./home');
-var game = require('./game');
+'use strict';
+
+const home = require('./home');
+const game = require('./game');
 
 module.exports = {
   route: function(app) {
