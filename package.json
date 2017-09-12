@@ -1,0 +1,39 @@
+{
+  "name": "hangman",
+  "version": "1.0.0",
+  "description": "A simple hangman game",
+  "main": "./lib/index.js",
+  "bin": {
+    "hangman": "./cli/index.js"
+  },
+  "scripts": {
+    "start": "node ./server/www.js",
+    "lint": "eslint .",
+    "test": "cross-env NODE_ENV=test mocha tests/lib/ tests/server/ -c",
+    "coverage": "cross-env NODE_ENV=test istanbul cover ./node_modules/mocha/bin/_mocha -- tests/lib/ tests/server/ -R spec"
+  },
+  "license": "UNLICENSED",
+  "author": "Joaquin Briceno <joaquinbriceno1@gmail.com>",
+  "tags": [
+    "hangman",
+    "game"
+  ],
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "clear": "0.0.1",
+    "cross-env": "^5.0.5",
+    "express": "^4.14.0",
+    "meow": "^3.7.0",
+    "node-uuid": "^1.4.7",
+    "pug": "^2.0.0-beta3"
+  },
+  "devDependencies": {
+    "async": "^2.0.0-rc.6",
+    "chai": "^3.5.0",
+    "eslint": "^3.0.1",
+    "istanbul": "^0.4.4",
+    "mocha": "^2.5.3",
+    "supertest": "^1.2.0"
+  }
+}
