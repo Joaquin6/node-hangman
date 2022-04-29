@@ -35,7 +35,7 @@
     "uuid": "^3.1.0"
   },
   "devDependencies": {
-    "async": "^2.0.0-rc.6",
+    "async": "^2.6.4",
     "chai": "^3.5.0",
     "eslint": "^3.0.1",
     "istanbul": "^0.4.4",
